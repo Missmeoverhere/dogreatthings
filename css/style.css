@@ -1,0 +1,151 @@
+/*
+Project Name: Do great Things
+Client: General Asembly 
+Author: Kimberly Snodgrass
+*/
+
+/* Global Styles */
+body {
+    color: #333;
+    background: url('../images/bg_body.jpg'); 
+    background-repeat:no-repeat;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+a {
+    color: #1fa2e1;
+    text-decoration: none;
+}
+
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+.clear {
+    clear: both;
+}
+
+/* Layout Styles */
+#globalNav, #globalHeader, #main, #globalFooter  {
+    width: 960px;
+    margin: 0 auto;
+
+}
+#wrapper {
+    background: url('../images/bg_body.jpg') repeat-x;
+}
+#wrapNav {
+    background: black;
+}
+
+#globalHeader {
+    background: ;
+}
+#main {
+    background: ;
+}
+
+
+.listSocial {
+    background: url('../images/socialNav.png') no-repeat; 
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    list-style-type: none;
+    text-decoration: none;
+    float: right;}
+
+#globalFooter {
+    padding: 30;
+}
+
+/* Content Styles */
+#globalNav ul {
+    margin: 0;
+    padding: 0;
+}
+#globalNav ul li {
+    float: left;
+}
+#globalNav ul li a {
+    padding: 33px 15px;
+    display: block;
+    color: #ccc;
+}
+#globalNav ul li a:hover {
+    background: url('../images/bg_nav_rollover.png') repeat-x;
+    color: #96ddfc;
+}
+
+
+.box {
+    float: left;
+    width: 33.333333%;
+    padding-top: 50px;
+}
+#logo {
+    margin: 15px, 0px, 0px, 0px;
+}
+#logo a{
+    width: 350px;
+    height: 54px;
+    background: url('../images/logo.png') no-repeat;
+    display: block;
+    /*image replacement hide text */
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: -22px;
+}
+
+#container {
+    margin-left: -15px;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+.row {
+    overflow: hidden;
+}
+.span-one-third {
+    display: inline;
+    float: left;
+    margin: 15px;
+}
+
+h1 {
+    font-size: 300%;
+    margin: 20px;
+    text-align: center;
+}
+
+a {
+    color: rgba(41, 137, 255, .95);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+    
+.clear {
+    clear: both;
+}
+
+@media only screen and (min-width: 768px) { 
+
+    .span-one-third {
+        width: 30%;
+    
+    } 
+
+
+
