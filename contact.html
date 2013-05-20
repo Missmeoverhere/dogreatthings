@@ -12,17 +12,25 @@
 		<script language="javascript" type="text/javascript">
 
                   function popitup() {
-                  newwindow=window.open("https://www.facebook.com/dogreathings",'Do Great Things on Facebook','height=725,width=650');
-                  if (window.focus) {newwindow.focus()}
-                  return false;
-                  var facebook = prompt('Do you like us on Facebook?');
-                  if((facebook == 'Yes'))
-                  {
-		  console.log('you are a winner and you love us on Facebook');
+                  	newwindow=window.open("https://www.facebook.com/dogreathings",'Do Great Things on Facebook','height=725,width=650');
+                  	if (window.focus) {newwindow.focus()}
+                  	return false;
                   }
-                   if((facebook == 'No'))
-                  {
-		  console.log('you still need to like us on Facebook');
+                  
+                  function fblikeprompt() {
+                  	var facebook = prompt('Do you like us on Facebook?');
+                  	if((facebook == 'Yes'))
+                  	{
+		  		console.log('you are a winner and you love us on Facebook');
+                  	}
+                   	else if((facebook == 'No'))
+                  	{
+		  		console.log('you still need to like us on Facebook');
+                  	}
+                  	else
+                  	{
+                  		console.log('thanks for liking us!');
+                  	}
                   }
                   
 		</script>
@@ -50,9 +58,13 @@
 			</p>
 
 			<p class="lead">Contact us at 562-587-9980 or email <a href="mailto:kimberlyjane@asana.com"> here! </a></p>
+			
 			<a href="https://www.facebook.com/dogreathings" onclick="return popitup()">Do Great Things on Facebook</a>
+			
+			<script language="javascript" type="text/javascript"> fblikeprompt(); </script>
+			
 			<FORM class="back"><INPUT Type="button" VALUE="Back" onClick="history.go(-1);return true;"></FORM>
-	
+	    
 		  	
 		  	
 		  </div> <!--#main-->
